@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*@media only screen and (min-width: 1200px){*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+/* Navigation Bar */
+
+@media  screen
+    and (min-width: 768px) 
+    and (max-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        .nav-bar ul li {
+    
+            list-style: none;
+           
+            display: block;
+            
+        }
+        
+        .nav-bar{
+            height: 90px;
+        
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100000;
+            box-sizing: border-box;
+           
+        }
+        
+        .nav-bar .check-btn{
+            padding: 15px 20px;
+        }
+        .nav-bar .check-btn{
+            position: fixed;
+            float: right;
+            right: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            display: inline;
+            color: black;
+            
+        }
+        .nav-bar .check-btn span{
+            display: none;
+            transition-delay: 3s;
+        }
+        
+        .nav-bar ul{
+            position: fixed;
+            width: 50%;
+            left: -1000px;
+            background-color: #fff;
+            transition: all 0.5s;
+            height: 100%;
+          
+        }
+        
+         #check:checked ~ ul{
+          left: 0px;
+        }
+        .nav-bar ul li a{
+            display: block;
+            padding: 0px 15px;  
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 20px;
+            opacity: 0.9;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+        .nav-bar ul ul li a {
+               
+          
+         display: none;  
+         
+        }
+        
+        #about i{
+            display: none;
+        }
+
+
+        #input-contact input{
+            text-indent: 10px;
+             color: white;
+             opacity: 0.2;
+             width: 100%;
+             height: 50px;
+              background-color: black;
+               border: none;
+               border-radius: 5px;
+               margin-top: 10px;
+        }
+        #input-contact textarea{
+            color: white;
+             opacity: 0.2;
+              border-radius: 5px;
+               text-indent: 10px;
+                margin-top: 10px;
+                 background: black;
+                  border: none;
+                  width: 100%;
+        
+        }
+        iframe{
+            width: 100%;
+        }
+        
+    }
+
+    @media  screen
+    and (min-width: 1025px) 
+    and (max-width: 1200px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+
+.nav-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #1D2432;
+
+}
+
+
+.nav-bar img{
+  margin-left: 20px;  
+  display: block; 
+}
+.nav-bar ul {
+    padding: 0;
+    margin: 0;
+    /*float: right;*/
+  
+}
+.nav-bar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+.nav-bar ul li a{
+    display: block;
+    padding: 0px 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 15px;
+    opacity: 0.7;
+}
+.nav-bar ul ul{
+    position: absolute;
+    top: 50px;
+    display: none;
+    height: 500%;
+    width: 400%;
+    background-color: white;
+   
+}
+/*
+.nav-bar ul li:hover > ul{
+    display: block;
+    
+}*/
+.nav-bar ul ul li{
+     display: list-item;
+     position: relative;
+     float: none;
+     width: 150px;  
+} 
+.nav-bar ul ul li a{
+    line-height: 40px;
+    color: black;
+   
+}
+
+.nav-bar ul a{
+    letter-spacing: 1px;
+}
+
+.nav-bar ul  a:after{
+    content: "";
+    height: 1.2px;
+    width: 0%;
+    background-color: blueviolet;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    transition: 0.4s;
+}
+.nav-bar ul  a:hover:after{
+    width: 80%;
+}
+.nav-bar ul ul a:after{
+    content: "";
+    height: 1.2px;
+    width: 0%;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.4s;
+
+}
+.nav-bar ul ul  a:hover:after{
+    width: 60%;  
+}
+.nav-bar ul a:hover{
+   color: cyan;
+  
+}
+
+
+#input-contact input{
+    text-indent: 10px;
+     color: white;
+     opacity: 0.2;
+     width: 100%;
+     height: 50px;
+      background-color: black;
+       border: none;
+       border-radius: 5px;
+       margin-top: 10px;
+}
+#input-contact textarea{
+    color: white;
+     opacity: 0.2;
+      border-radius: 5px;
+       text-indent: 10px;
+        margin-top: 10px;
+         background: black;
+          border: none;
+          width: 100%;
+
+}
+
+    }
+    @media  screen
+    and (min-width: 1200px) 
+    and (-webkit-min-device-pixel-ratio: 1)
+{
+    .nav-bar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 100000;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        background-color: #1D2432;
+    
+    }
+    
+    
+    .nav-bar img{
+      margin-left: 20px;  
+      display: block; 
+    }
+    .nav-bar ul {
+        padding: 0;
+        margin: 0;
+        /*float: right;*/
+      
+    }
+    .nav-bar ul li{
+        position: relative;
+        list-style: none;
+        display: inline-block;
+    }
+    .nav-bar ul li a{
+        display: block;
+        padding: 0px 15px;
+        color: white;
+        text-decoration: none;
+        line-height: 60px;
+        font-size: 15px;
+        opacity: 0.7;
+    }
+    .nav-bar ul ul{
+        position: absolute;
+        top: 50px;
+        display: none;
+        height: 500%;
+        width: 400%;
+        background-color: white;
+       
+    }
+    /*
+    .nav-bar ul li:hover > ul{
+        display: block;
+        
+    }*/
+    .nav-bar ul ul li{
+         display: list-item;
+         position: relative;
+         float: none;
+         width: 150px;  
+    } 
+    .nav-bar ul ul li a{
+        line-height: 40px;
+        color: black;
+       
+    }
+    
+    .nav-bar ul a{
+        letter-spacing: 1px;
+    }
+    
+    .nav-bar ul  a:after{
+        content: "";
+        height: 1.2px;
+        width: 0%;
+        background-color: blueviolet;
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        transition: 0.4s;
+    }
+    .nav-bar ul  a:hover:after{
+        width: 80%;
+    }
+    .nav-bar ul ul a:after{
+        content: "";
+        height: 1.2px;
+        width: 0%;
+        background-color: blueviolet;
+        position: absolute;
+        bottom: 10px;
+        transition: 0.4s;
+    
+    }
+    .nav-bar ul ul  a:hover:after{
+        width: 60%;  
+    }
+    .nav-bar ul a:hover{
+       color: cyan;
+      
+    }
+
+
+    #input-contact input{
+        text-indent: 10px;
+         color: white;
+         opacity: 0.2;
+         width: 100%;
+         height: 50px;
+          background-color: black;
+           border: none;
+           border-radius: 5px;
+           margin-top: 10px;
+    }
+    #input-contact textarea{
+        color: white;
+         opacity: 0.2;
+          border-radius: 5px;
+           text-indent: 10px;
+            margin-top: 10px;
+             background: black;
+              border: none;
+              width: 100%;
+    
+    }
+
+}
+
+
+
+.container #content{
+    margin-top: 120px;
+    font-size: 50px;
+    width: 450px;
+    letter-spacing: 3px;
+    color: #FFBE0B;
+}
+.bg-color{
+    background-color: #1D2432;
+}
+#logo-deligh{
+   /* margin-top: -120px;*/
+    width: 100%;
+}
+
+.img-contact img{
+    
+     width: 100%;
+     height: 100%;
+    margin-top: 81px;
+    
+}
+.img-contact{
+    position: relative;
+    overflow: hidden;
+    
+}
+#sliderImg{
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+
+    }
+    85%{
+        transform: scale(1);
+
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.img-contact h1{
+    color: #FFBE0B;
+
+    margin-top: 50px;
+}
+
+
+#input-contact .col-lg-6{
+    margin-top: 50px;
+}
+
+#input-contact #email{
+    margin-top: 40px;
+}
+#input-contact #company{
+    margin-top: 40px;
+}
+
+.tabbar {
+    margin-top: 200px;
+    background: #1D2432;
+    width: 100%;
+    height: 100%;
+}
+.tabbar img{
+    width: 45px;
+    
+}
+
+.tabbar  .row{
+    margin-top: 30px;
+}
+.tabbar  #end{
+    font-size: 18px;
+    color: #fff;
+   
+}
+.tabbar .container #connect-us{
+    color: #FFBE0B;
+    font-size: 28px;
+    opacity: 0.7;
+
+}
+.tabbar .container i{
+    font-size: 35px;
+     color: white;
+}
+.tabbar .container #media{
+    margin-left: 20px;
+   
+}
+.tabbar .container a{
+    text-decoration: none;
+}
+
+.tabbar #tell{
+    color: #fff;
+    font-size: 18px;
+    text-indent: 20px;
+}
+.tabbar  #info{
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8px;
+   text-indent: 30px;
+}
+
+.container hr{
+    opacity: 0.4;
+}
+#input-contact .text-center button{
+    margin-top: 40px;
+    
+    border: 1px solid lightblue;
+    padding: 15px 100px;
+    border-radius: 40px;
+    font-size: 24px;
+}
+#input-contact .text-center button:hover{
+    background:#1D2432;
+    color: #fff;
+}
+
+.tabbar #get{
+    color: #FFBE0B;
+    font-size: 28px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+
+
+
+
+@media  screen
+    and (min-width: 479px) 
+    and (max-width: 768px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+        .nav-bar ul li {
+    
+            list-style: none;
+           
+            display: block;
+            
+        }
+        
+        .nav-bar{
+            height: 90px;
+        
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100000;
+            box-sizing: border-box;
+           
+        }
+        
+        .nav-bar .check-btn{
+            padding: 15px 20px;
+        }
+        .nav-bar .check-btn{
+            position: fixed;
+            float: right;
+            right: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            display: inline;
+            color: black;
+            
+        }
+        .nav-bar .check-btn span{
+            display: none;
+            transition-delay: 3s;
+        }
+        
+        .nav-bar ul{
+            position: fixed;
+            width: 50%;
+            left: -1000px;
+            background-color: #fff;
+            transition: all 0.5s;
+            height: 100%;
+          
+        }
+        
+         #check:checked ~ ul{
+          left: 0px;
+        }
+        .nav-bar ul li a{
+            display: block;
+            padding: 0px 15px;  
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 20px;
+            opacity: 0.9;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+        .nav-bar ul ul li a {
+               
+          
+         display: none;  
+         
+        }
+        
+        #about i{
+            display: none;
+        }
+
+
+        #input-contact input{
+            text-indent: 10px;
+             color: white;
+             opacity: 0.2;
+             width: 100%;
+             height: 50px;
+              background-color: black;
+               border: none;
+               border-radius: 5px;
+               margin-top: 10px;
+        }
+        #input-contact textarea{
+            color: white;
+             opacity: 0.2;
+              border-radius: 5px;
+               text-indent: 10px;
+                margin-top: 10px;
+                 background: black;
+                  border: none;
+                  width: 100%;
+        
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+
+
+
+    .check-btn{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    
+      .menu-footer-bar i{
+        font-size: 35px;
+         color: white;
+         margin-left: 10px;
+      }    
+
+      @media  screen
+      and (max-width: 479px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+       
+        .nav-bar ul li {
+    
+            list-style: none;
+           
+            display: block;
+            
+        }
+        
+        .nav-bar{
+            height: 90px;
+        
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100000;
+            box-sizing: border-box;
+           
+        }
+        
+        .nav-bar .check-btn{
+            padding: 15px 20px;
+        }
+        .nav-bar .check-btn{
+            position: fixed;
+            float: right;
+            right: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            display: inline;
+            color:black;
+            
+        }
+        .nav-bar .check-btn span{
+            display: none;
+            transition-delay: 3s;
+        }
+        
+        .nav-bar ul{
+            position: fixed;
+            width: 50%;
+            left: -1000px;
+            background-color: #fff;
+            transition: all 0.5s;
+            height: 100%;
+          
+        }
+        
+         #check:checked ~ ul{
+          left: 0px;
+        }
+        .nav-bar ul li a{
+            display: block;
+            padding: 0px 15px;  
+            text-decoration: none;
+            line-height: 50px;
+            font-size: 20px;
+            opacity: 0.9;
+            text-align: left;
+            color: black;
+            text-decoration: none;
+            
+        }
+        .nav-bar ul ul li a {
+               
+          
+         display: none;  
+         
+        }
+        
+        #about i{
+            display: none;
+        }
+
+
+        #input-contact input{
+            text-indent: 10px;
+             color: white;
+             opacity: 0.2;
+             width: 100%;
+             height: 50px;
+              background-color: black;
+               border: none;
+               border-radius: 5px;
+               margin-top: 10px;
+        }
+        #input-contact textarea{
+            color: white;
+             opacity: 0.2;
+              border-radius: 5px;
+               text-indent: 10px;
+                margin-top: 10px;
+                 background: black;
+                  border: none;
+                  width: 100%;
+        
+        }
+        iframe{
+            width: 100%;
+        }
+      }
